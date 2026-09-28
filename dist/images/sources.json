@@ -1,0 +1,326 @@
+[
+  {
+    "name": "Iron Ore",
+    "source": "https://satisfactory.wiki.gg/images/Iron_Ore.png?ce3a2d",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Iron_Ore.png",
+    "file": "iron-ore.png"
+  },
+  {
+    "name": "Copper Ore",
+    "source": "https://satisfactory.wiki.gg/images/Copper_Ore.png?6bbb80",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Copper_Ore.png",
+    "file": "copper-ore.png"
+  },
+  {
+    "name": "Copper Ingot",
+    "source": "https://satisfactory.wiki.gg/images/Copper_Ingot.png?e359bc",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Copper_Ingot.png",
+    "file": "copper-ingot.png"
+  },
+  {
+    "name": "Iron Ingot",
+    "source": "https://satisfactory.wiki.gg/images/Iron_Ingot.png?a70603",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Iron_Ingot.png",
+    "file": "iron-ingot.png"
+  },
+  {
+    "name": "Smelter",
+    "source": "https://satisfactory.wiki.gg/images/Smelter.png?dd029f",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Smelter.png",
+    "file": "smelter.png"
+  },
+  {
+    "name": "Assembler",
+    "source": "https://satisfactory.wiki.gg/images/Assembler.png?38c7e9",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Assembler.png",
+    "file": "assembler.png"
+  },
+  {
+    "name": "Caterium Ingot",
+    "source": "https://satisfactory.wiki.gg/images/Caterium_Ingot.png?91cdc0",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Caterium_Ingot.png",
+    "file": "caterium-ingot.png"
+  },
+  {
+    "name": "Caterium Ore",
+    "source": "https://satisfactory.wiki.gg/images/Caterium_Ore.png?4911c7",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Caterium_Ore.png",
+    "file": "caterium-ore.png"
+  },
+  {
+    "name": "Iron Plate",
+    "source": "https://satisfactory.wiki.gg/images/Iron_Plate.png?93d6ef",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Iron_Plate.png",
+    "file": "iron-plate.png"
+  },
+  {
+    "name": "Constructor",
+    "source": "https://satisfactory.wiki.gg/images/Constructor.png?e11c2b",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Constructor.png",
+    "file": "constructor.png"
+  },
+  {
+    "name": "Plastic",
+    "source": "https://satisfactory.wiki.gg/images/Plastic.png?c8d276",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Plastic.png",
+    "file": "plastic.png"
+  },
+  {
+    "name": "Foundry",
+    "source": "https://satisfactory.wiki.gg/images/Foundry.png?47f2ba",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Foundry.png",
+    "file": "foundry.png"
+  },
+  {
+    "name": "Steel Ingot",
+    "source": "https://satisfactory.wiki.gg/images/Steel_Ingot.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Steel_Ingot.png",
+    "file": "steel-ingot.png"
+  },
+  {
+    "name": "Iron Rod",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Iron_Rod.png/120px-Iron_Rod.png?762556",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Iron_Rod.png",
+    "file": "iron-rod.png"
+  },
+  {
+    "name": "Screws",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Screws.png/120px-Screws.png?c69a34",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Screws.png",
+    "file": "screws.png"
+  },
+  {
+    "name": "Steel Beam",
+    "source": "https://satisfactory.wiki.gg/images/Steel_Beam.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Steel_Beam.png",
+    "file": "steel-beam.png"
+  },
+  {
+    "name": "Wire",
+    "source": "https://satisfactory.wiki.gg/images/Wire.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Wire.png",
+    "file": "wire.png"
+  },
+  {
+    "name": "Cable",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Cable.png/120px-Cable.png?c87492",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Cable.png",
+    "file": "cable.png"
+  },
+  {
+    "name": "Rubber",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Rubber.png/120px-Rubber.png?69f8e2",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Rubber.png",
+    "file": "rubber.png"
+  },
+  {
+    "name": "Quickwire",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Quickwire.png/120px-Quickwire.png?92bd94",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Quickwire.png",
+    "file": "quickwire.png"
+  },
+  {
+    "name": "Concrete",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Concrete.png/120px-Concrete.png?f56994",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Concrete.png",
+    "file": "concrete.png"
+  },
+  {
+    "name": "Limestone",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Limestone.png/120px-Limestone.png?d9cd95",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Limestone.png",
+    "file": "limestone.png"
+  },
+  {
+    "name": "Copper Sheet",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Copper_Sheet.png/120px-Copper_Sheet.png?7eb920",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Copper_Sheet.png",
+    "file": "copper-sheet.png"
+  },
+  {
+    "name": "Reinforced Iron Plate",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Reinforced_Iron_Plate.png/120px-Reinforced_Iron_Plate.png?9d05d4",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Reinforced_Iron_Plate.png",
+    "file": "reinforced-iron-plate.png"
+  },
+  {
+    "name": "Rotor",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Rotor.png/120px-Rotor.png?2616b2",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Rotor.png",
+    "file": "rotor.png"
+  },
+  {
+    "name": "Steel Pipe",
+    "source": "https://satisfactory.wiki.gg/images/Steel_Pipe.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Steel_Pipe.png",
+    "file": "steel-pipe.png"
+  },
+  {
+    "name": "Modular Frame",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Modular_Frame.png/120px-Modular_Frame.png?e657af",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Modular_Frame.png",
+    "file": "modular-frame.png"
+  },
+  {
+    "name": "Coal",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Coal.png/120px-Coal.png?b318d1",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Coal.png",
+    "file": "coal.png"
+  },
+  {
+    "name": "Encased Industrial Beam",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Encased_Industrial_Beam.png/120px-Encased_Industrial_Beam.png?61a80d",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Encased_Industrial_Beam.png",
+    "file": "encased-industrial-beam.png"
+  },
+  {
+    "name": "Stator",
+    "source": "https://satisfactory.wiki.gg/images/Stator.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Stator.png",
+    "file": "stator.png"
+  },
+  {
+    "name": "Motor",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Motor.png/120px-Motor.png?345ae9",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Motor.png",
+    "file": "motor.png"
+  },
+  {
+    "name": "Smart Plating",
+    "source": "https://satisfactory.wiki.gg/images/Smart_Plating.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Smart_Plating.png",
+    "file": "smart-plating.png"
+  },
+  {
+    "name": "Manufacturer",
+    "source": "https://satisfactory.wiki.gg/images/Manufacturer.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Manufacturer.png",
+    "file": "manufacturer.png"
+  },
+  {
+    "name": "Automated Wiring",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Automated_Wiring.png/120px-Automated_Wiring.png?f26170",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Automated_Wiring.png",
+    "file": "automated-wiring.png"
+  },
+  {
+    "name": "Heavy Modular Frame",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Heavy_Modular_Frame.png/120px-Heavy_Modular_Frame.png?3faddb",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Heavy_Modular_Frame.png",
+    "file": "heavy-modular-frame.png"
+  },
+  {
+    "name": "Circuit Board",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Circuit_Board.png/120px-Circuit_Board.png?1b77f5",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Circuit_Board.png",
+    "file": "circuit-board.png"
+  },
+  {
+    "name": "Petroleum Coke",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Petroleum_Coke.png/120px-Petroleum_Coke.png?c7b3af",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Petroleum_Coke.png",
+    "file": "petroleum-coke.png"
+  },
+  {
+    "name": "Silica",
+    "source": "https://satisfactory.wiki.gg/images/Silica.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Silica.png",
+    "file": "silica.png"
+  },
+  {
+    "name": "Computer",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Computer.png/120px-Computer.png?823b42",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Computer.png",
+    "file": "computer.png"
+  },
+  {
+    "name": "Crystal Oscillator",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Crystal_Oscillator.png/120px-Crystal_Oscillator.png?d0e57d",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Crystal_Oscillator.png",
+    "file": "crystal-oscillator.png"
+  },
+  {
+    "name": "Quartz Crystal",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Quartz_Crystal.png/120px-Quartz_Crystal.png?fccd00",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Quartz_Crystal.png",
+    "file": "quartz-crystal.png"
+  },
+  {
+    "name": "Copper Powder",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Copper_Powder.png/120px-Copper_Powder.png?7104bd",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Copper_Powder.png",
+    "file": "copper-powder.png"
+  },
+  {
+    "name": "Alclad Aluminum Sheet",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Alclad_Aluminum_Sheet.png/120px-Alclad_Aluminum_Sheet.png?45856b",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Alclad_Aluminum_Sheet.png",
+    "file": "alclad-aluminum-sheet.png"
+  },
+  {
+    "name": "Aluminum Ingot",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Aluminum_Ingot.png/120px-Aluminum_Ingot.png?223f1f",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Aluminum_Ingot.png",
+    "file": "aluminum-ingot.png"
+  },
+  {
+    "name": "Modular Engine",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Modular_Engine.png/120px-Modular_Engine.png?521332",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Modular_Engine.png",
+    "file": "modular-engine.png"
+  },
+  {
+    "name": "Adaptive Control Unit",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Adaptive_Control_Unit.png/120px-Adaptive_Control_Unit.png?69ee88",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Adaptive_Control_Unit.png",
+    "file": "adaptive-control-unit.png"
+  },
+  {
+    "name": "SAM Fluctuator",
+    "source": "https://satisfactory.wiki.gg/images/SAM_Fluctuator.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:SAM_Fluctuator.png",
+    "file": "sam-fluctuator.png"
+  },
+  {
+    "name": "Reanimated SAM",
+    "source": "https://satisfactory.wiki.gg/images/thumb/Reanimated_SAM.png/120px-Reanimated_SAM.png?61fe84",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Reanimated_SAM.png",
+    "file": "reanimated-sam.png"
+  },
+  {
+    "name": "Refinery",
+    "source": "https://satisfactory.wiki.gg/images/Refinery.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Refinery.png",
+    "file": "refinery.png"
+  },
+  {
+    "name": "Blender",
+    "source": "https://satisfactory.wiki.gg/images/Blender.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Blender.png",
+    "file": "blender.png"
+  },
+  {
+    "name": "Particle Accelerator",
+    "source": "https://satisfactory.wiki.gg/images/Particle_Accelerator.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Particle_Accelerator.png",
+    "file": "particle-accelerator.png"
+  },
+  {
+    "name": "Converter",
+    "source": "https://satisfactory.wiki.gg/images/Converter.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Converter.png",
+    "file": "converter.png"
+  },
+  {
+    "name": "Quantum Encoder",
+    "source": "https://satisfactory.wiki.gg/images/Quantum_Encoder.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Quantum_Encoder.png",
+    "file": "quantum-encoder.png"
+  },
+  {
+    "name": "Packager",
+    "source": "https://satisfactory.wiki.gg/images/Packager.png",
+    "filePage": "https://satisfactory.wiki.gg/wiki/File:Packager.png",
+    "file": "packager.png"
+  }
+]
