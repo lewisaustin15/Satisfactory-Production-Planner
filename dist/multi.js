@@ -12,8 +12,8 @@ function currentProductionTargets(root,target){
 }
 function updateTargetLabels(){
   document.querySelectorAll('[data-target-label]').forEach(label=>{const t=additionalTargets.find(t=>t.key===label.dataset.targetLabel);if(t)label.textContent=$('mode').value==='batch'?(unit(t.item)==='m³'?'Total volume (m³)':'Total items'):unit(t.item)+' / min';});
-  $('multiTargetHint').textContent=$('mode').value==='batch'?'All output quantities use the completion time set for the main output below.':'Each output has its own target rate. Shared inputs are combined in the full production chain.';
-  $('mainOnlyNote').hidden=!additionalTargets.length;
+  $('multiTargetHint').textContent=$('mode').value==='batch'?'All output quantities use the shared completion time above.':'Each output has its own target rate. Shared inputs are combined in the full production chain.';
+  $('mainOnlyNote').hidden=true;
 }
 function renderAdditionalTargets(){
   const list=$('additionalTargetRows');list.replaceChildren();
