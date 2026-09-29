@@ -50,8 +50,12 @@ function planMultipleOutputs(targets,settings,choices={}){
     if(n.item==='Nitrogen Gas'&&n.extraction)pressurizers+=Math.ceil(n.count/settings.satellites);
     if(r)for(const [item,rate] of Object.entries(r.outputs)){if(item!==n.item)surplus[item]=(surplus[item]||0)+rate*n.demand/r.rate;}
   }
+  // Derive complexity from the selected, cycle-broken dependency graph after demand calculation.
+  for(const n of [...ordered].reverse())n.complexity=n.edges.length?1+Math.max(...n.edges.map(e=>nodes.get(e.key).complexity||0)):0;
+  const group=n=>minedResources.has(n.item)||['Water','Crude Oil','Nitrogen Gas'].includes(n.item)?0:/ Ingot$/.test(n.item)?1:2;
+  const stages=[...ordered].sort((a,b)=>group(a)-group(b)||(group(a)===2?a.complexity-b.complexity:0)||a.item.localeCompare(b.item,'en')||Number(!!a.cycle)-Number(!!b.cycle));
   if(pressurizers)totals['Resource Well Pressurizer']=pressurizers;
-  return{targets:[...roots.entries()].map(([item,entry])=>({item,recipe:entry.recipe.name,target:entry.target,clock:entry.clock})),stages:ordered.reverse(),totals,total:Object.values(totals).reduce((a,b)=>a+b,0),upstream:ordered.filter(n=>!n.final).reduce((sum,n)=>sum+n.count,0)+pressurizers,external:ordered.some(n=>n.external&&n.demand>0),warnings:[...warnings],surplus,pressurizers};
+  return{targets:[...roots.entries()].map(([item,entry])=>({item,recipe:entry.recipe.name,target:entry.target,clock:entry.clock})),stages,totals,total:Object.values(totals).reduce((a,b)=>a+b,0),upstream:ordered.filter(n=>!n.final).reduce((sum,n)=>sum+n.count,0)+pressurizers,external:ordered.some(n=>n.external&&n.demand>0),warnings:[...warnings],surplus,pressurizers};
 }
 function chainSettings(){return{miner:Number($('minerTier').value),purity:Number($('nodePurity').value),purities:resourcePurities,clock:Number($('clock').value),extractionClock:Number($('extractionClock').value),satellites:Number($('wellSatellites').value)};}
 function renderProductionChain(root,target){
