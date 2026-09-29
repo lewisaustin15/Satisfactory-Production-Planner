@@ -834,5 +834,21 @@ const wikiImages={
   "Miner Mk.3": {
     "path": "images/miner-mk-3.png",
     "source": "https://satisfactory.wiki.gg/wiki/File:Miner_Mk.3.png"
+  },
+  "Water Extractor": {
+    "path": "images/water-extractor.png",
+    "source": "https://satisfactory.wiki.gg/wiki/File:Water_Extractor.png"
+  },
+  "Oil Extractor": {
+    "path": "images/oil-extractor.png",
+    "source": "https://satisfactory.wiki.gg/wiki/File:Oil_Extractor.png"
+  },
+  "Resource Well Extractor": {
+    "path": "images/resource-well-extractor.png",
+    "source": "https://satisfactory.wiki.gg/wiki/File:Resource_Well_Extractor.png"
+  },
+  "Resource Well Pressurizer": {
+    "path": "images/resource-well-pressurizer.png",
+    "source": "https://satisfactory.wiki.gg/wiki/File:Resource_Well_Pressurizer.png"
   }
 };
