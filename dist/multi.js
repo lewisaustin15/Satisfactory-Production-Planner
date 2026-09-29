@@ -1,3 +1,4 @@
+let noOutputs=false;
 const additionalTargets=[];
 let targetSequence=0;
 const automaticItems=[...new Set(recipes.filter(r=>!r.manual).map(r=>r.item))].sort();
@@ -30,12 +31,22 @@ function renderAdditionalTargets(){
     recipe.addEventListener('change',()=>{t.recipeId=recipe.value;renderAdditionalTargets();render();});
     amount.addEventListener('input',()=>{t.amount=amount.value;render();});
     remove.addEventListener('click',()=>{additionalTargets.splice(additionalTargets.indexOf(t),1);renderAdditionalTargets();render();});
-    list.append(row);
+    const note=document.createElement('p');note.className='hint output-recipe-note';note.textContent=recipeDescription(recipes.find(r=>r.id===t.recipeId));row.append(note);list.append(row);
   }
   updateTargetLabels();
 }
 function initMultipleOutputs(){
-  $('addOutput').addEventListener('click',()=>{const used=new Set([$('item').value,...additionalTargets.map(t=>t.item)]);const item=['Modular Frame','Rotor',...automaticItems].find(n=>!used.has(n))||'Iron Plate';const r=recipes.find(r=>r.item===item&&!r.manual);additionalTargets.push({key:String(++targetSequence),item,recipeId:r.id,amount:'1',clock:'100'});renderAdditionalTargets();render();});
+  $('addOutput').addEventListener('click',()=>{if(noOutputs){noOutputs=false;document.querySelector('.controls').hidden=false;render();return;}const used=new Set([$('item').value,...additionalTargets.map(t=>t.item)]);const item=['Modular Frame','Rotor',...automaticItems].find(n=>!used.has(n))||'Iron Plate';const r=recipes.find(r=>r.item===item&&!r.manual);additionalTargets.push({key:String(++targetSequence),item,recipeId:r.id,amount:'1',clock:'100'});renderAdditionalTargets();render();});
   renderAdditionalTargets();
 }
 if(document.modelContext?.registerTool){try{Promise.resolve(document.modelContext.registerTool({name:'set_additional_outputs',description:'Replace the additional production targets alongside the main output. Amounts are per minute in continuous mode, or quantities over the shared completion time in batch mode. An empty list removes all additional outputs.',inputSchema:{type:'object',properties:{outputs:{type:'array',items:{type:'object',properties:{item:{type:'string'},recipe:{type:'string'},amount:{type:'number',minimum:0,maximum:1e9},clock:{type:'number',minimum:1,maximum:250,description:'Clock speed percent for this output; defaults to 100.'}},required:['item','recipe','amount'],additionalProperties:false}}},required:['outputs'],additionalProperties:false},annotations:{readOnlyHint:false},execute(input){if(!Array.isArray(input.outputs))throw Error('Provide an outputs array.');const root=getRecipe();if(!window.currentResult||root.manual||root.name==='Custom recipe')throw Error('Select a valid automated main output first.');const pending=input.outputs.map(o=>{const recipe=recipes.find(r=>r.item===o.item&&r.name===o.recipe&&!r.manual);if(!recipe||!Number.isFinite(o.amount)||o.amount<0||o.amount>1e9)throw Error('Unknown recipe or invalid output amount');return{recipe,target:o.amount/($('mode').value==='batch'?Number($('minutes').value):1),amount:o.amount,clock:o.clock??100};});planMultipleOutputs([{recipe:root,target:window.currentResult.target,clock:Number($('clock').value)},...pending],chainSettings(),upstreamChoices);additionalTargets.splice(0,additionalTargets.length,...pending.map(t=>({key:String(++targetSequence),item:t.recipe.item,recipeId:t.recipe.id,amount:String(t.amount),clock:String(t.clock)})));renderAdditionalTargets();render();return compactChain(window.currentChain);}})).catch(()=>{});}catch{}}
+
+function recipeDescription(r){return [r.manual?r.machine:r.machine+' · '+fmt(r.rate)+' '+unit(r.item)+' / min at 100%',r.seasons.length?'FICSMAS seasonal recipe':'',r.unlock||''].filter(Boolean).join(' · ');}
+function removeFirstOutput(){
+ const next=additionalTargets.shift();
+ if(next){$('item').value=next.item;selectItem();$('recipe').value=next.recipeId;$('amount').value=next.amount;$('clock').value=next.clock;renderAdditionalTargets();render();}
+ else{noOutputs=true;render();}
+}
+function renderEmptyOutputs(){
+ document.querySelector('.controls').hidden=true;document.querySelector('.first-output-details').hidden=true;$('productionChain').hidden=true;document.body.classList.remove('invalid');window.currentResult=null;window.currentChain=null;$('error').textContent='';$('multiTargetError').textContent='';$('count').textContent='0';$('machine').textContent='Total machines';$('machineCaption').textContent='No production targets';$('resultHeading').textContent='MAIN OUTPUT · ALL MACHINES';$('recipeBadge').textContent='0 OUTPUTS';$('summary').textContent='Add an output to start planning your factory.';$('allMachineCards').replaceChildren();$('metrics').hidden=true;$('utilization').hidden=true;document.querySelector('.machine-visual').hidden=true;$('multiTargetHint').textContent='Add an output to start planning your factory.';
+}
