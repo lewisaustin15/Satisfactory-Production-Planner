@@ -822,5 +822,17 @@ const wikiImages={
   "Nuclear Power Plant": {
     "path": "images/nuclear-power-plant.png",
     "source": "https://satisfactory.wiki.gg/wiki/File:Nuclear_Power_Plant.png"
+  },
+  "Miner Mk.1": {
+    "path": "images/miner-mk-1.png",
+    "source": "https://satisfactory.wiki.gg/wiki/File:Miner_Mk.1.png"
+  },
+  "Miner Mk.2": {
+    "path": "images/miner-mk-2.png",
+    "source": "https://satisfactory.wiki.gg/wiki/File:Miner_Mk.2.png"
+  },
+  "Miner Mk.3": {
+    "path": "images/miner-mk-3.png",
+    "source": "https://satisfactory.wiki.gg/wiki/File:Miner_Mk.3.png"
   }
 };
